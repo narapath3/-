@@ -28,6 +28,10 @@ app.get('/', (req, res) => {
     res.send('Abdul LINE Bot is running.');
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+        console.log(`Server is listening on port ${PORT}`);
+    });
+}
+
+module.exports = app;
