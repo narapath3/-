@@ -1,0 +1,16 @@
+{
+  "name": "line-bot-abdul",
+  "version": "1.0.0",
+  "description": "Abdul LINE Bot frontend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@line/bot-sdk": "^11.0.2",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.7.2"
+  }
+}
